@@ -7,18 +7,20 @@ f = open('doctors.json')
 data = json.load(f)
 doctors = data[0]['doctors']
 
-"""Get list of Doctors"""
-# for doctor in data[0]['doctors']:
-#     print(doctor)
+
 def get_doctor_list(data):
+    """Get list of Doctors"""
+
     doctors = data[0]['doctors']
     doctor_names_lst = doctors[0]["name"]
     return doctor_names_lst
+
 print("Doctors: ", get_doctor_list(data), "\n")
 
 
-"""Get list of appointments for doctor"""
 def doctors_apt_lst(doctors, doctor_name): 
+    """Get list of appointments for doctor"""
+
     for doctor in doctors: 
         if doctors[0]["name"] == doctor_name: 
             return doctors[0]["appointments"]
@@ -26,9 +28,8 @@ def doctors_apt_lst(doctors, doctor_name):
 print("List of appointments: ", doctors_apt_lst(doctors, "Julius Hibbert"), '\n')
 
 
-
-"""Get appointments on specific day for doctor"""
 def specific_day_apts(doctors, day, doctor_name):
+    """Get appointments on specific day for doctor"""
     for doctor in doctors: 
             if doctors[0]["name"] == doctor_name: 
                 for item in doctors[0]["appointments"]: 
@@ -37,9 +38,10 @@ def specific_day_apts(doctors, day, doctor_name):
 
 print("Apts on specific day: ", specific_day_apts(doctors, "05/09/2018", "Julius Hibbert"))
 
-"""Delete specific appointment from doctor's calendar"""
+
 # TODO: Appointments should be able to be removed by id, patient name, day, and kind
 def delete_apt(doctors, doctor_name, id):
+    """Delete specific appointment from doctor's calendar"""
     for doctor in doctors: 
         if doctors[0]["name"] == doctor_name: 
             for item in doctors[0]["appointments"]: 
