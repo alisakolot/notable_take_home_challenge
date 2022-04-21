@@ -1,0 +1,17 @@
+[{
+    "doctors": [ 
+        {
+        "name": "Julius Hibbert", 
+        "id": 0, 
+        "appointments": [
+            {"id":1, "patient name":"Sterling Archer", "day": "05/08/2018", "time": "8:00AM", "kind": "New Patient"}, 
+            {"id":2, "patient name":"Cyril Figis", "day": "05/08/2018", "time": "8:30AM",  "kind": "Follow-Up"}, 
+            {"id":3, "patient name":"Ray Gilette", "day": "05/08/2018", "time": "9:00AM", "kind": "Follow-Up"}, 
+            {"id":4, "patient name":"Lana Kane", "day": "05/08/2018", "time": "9:30AM", "kind": "New Patient"}, 
+            {"id":5, "patient name":"Pam Poovey", "day": "05/08/2018", "time": "10:00AM", "kind": "New Patient"}, 
+            {"id":6, "patient name":"Bob Bobbert", "day": "05/09/2018", "time": "11:00AM", "kind": "New Patient"}
+        ]
+    }
+    ]
+
+}]
